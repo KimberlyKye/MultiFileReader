@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using MultiFileReader;
-
+﻿using MultiFileReader;
 
 var folderPath = "";
 

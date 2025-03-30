@@ -24,10 +24,10 @@ public class FolderReader : IFolderReader
                 stopWatch.Start();
 
                 var count = await fileSpacesCounter.CountSpaces(file);
-                Console.WriteLine($"Файл {fileName} содержит пробелы в количестве: {count}.");
-
                 stopWatch.Stop();
-                Console.WriteLine($"Считывание файла {fileName} заняло {stopWatch.ElapsedMilliseconds} мс");
+
+                Console.WriteLine($"Файл {fileName} содержит пробелы в количестве: {count}.");
+                Console.WriteLine($"Считывание файла {fileName} заняло {stopWatch.ElapsedMilliseconds} мс.");
             });
             tasks.Add(task);
         }
